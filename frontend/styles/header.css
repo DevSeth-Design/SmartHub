@@ -1,0 +1,112 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 1rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    color: #111111;
+    text-decoration: none;
+
+  }
+   .logo img {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+   }
+   
+   .logo span {
+    margin-left: 72px;
+    font-size: 2.5rem;
+    text-decoration: none;
+   }
+
+  .nav-links {
+    display: flex;
+    
+    gap: 1.5rem;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .nav-links a {
+    
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+    
+  }
+
+  .nav-links a:hover {
+    color: #0066ff;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding-right: 40px;
+  }
+
+  .search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    width: 200px;
+  }
+  
+  .search-input:focus {
+    border-color: #0066ff;
+    box-shadow: 0 0 8px rgba(0, 102, 255, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .nav-links {
+      justify-content: flex-start;
+      padding: 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .search-container {
+      padding-right: 0;
+      width: 100%;
+    }
+  
+  
+    .search-input {
+      width: 80%;
+    }
+  }
+  

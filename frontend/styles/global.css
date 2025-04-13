@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fefcf9;
+    color: #111111;
+  }
+  
+  /* body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image:
+      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 10px 10px;
+    pointer-events: none;
+    z-index: 9999;
+  } */
+  h1, h2, h3 {
+    color: #111111;
+  }
+  p {
+    color: #444444;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1; /* This allows the main content to expand and push the footer down */
+  }
+
+  .home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  /**Left Side**/
+  .call-to-action {
+    flex: 1 1 300px;
+    max-width: 500px;
+  }
+  .call-to-action h1 {
+    font-size: 62px;
+    margin-bottom: 1rem;
+  }
+  .call-to-action p {
+    font-size: 30px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #0066ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  /* Right side */
+  .smart-hub {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+  }
+  .hub-image-wrapper {
+    position: relative;
+    max-width: 600px;
+    width: 100%; 
+  }
+
+  .hub-image {
+    width: 100%;
+    height: auto;
+  }
+  .site-footer {
+    padding: 1.5rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #555;
+    font-size: 0.9rem;
+  }
+ 
+  
+  .hotspot {
+    position: absolute;
+    width: 17%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-color: transparent;
+  }
+
+  /* .hotspot::after {
+    content: attr(class);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 999;
+  } */
+  
+  
+  /* Adjust these based on pixel position */
+  .hotspot-wifi    { top: 12.5%;  left: 17%; }
+  .hotspot-lock    { top: 9%; right: 16.5%; }
+  .hotspot-camera  { top: 28%; right: 6%;  }
+  .hotspot-pet     { top: 52.5%; right: 6%; }
+  .hotspot-play    { top: 75.5%; right: 22%;  }
+  .hotspot-outlet  { top: 74.5%; left: 12.5%;  }
+  
+  /* Optional visual debug (remove when done) */
+  .hotspot:hover {
+    outline: 2px solid rgba(0, 102, 255, 0.6);
+  }
+
+  /* Responsive stacking on smaller screens */
+@media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .smart-hub {
+      justify-content: center;
+    }
+  }
+  
