@@ -108,7 +108,12 @@ body {
     border-radius: 50%;
     cursor: pointer;
     text-indent: -9999px;
+    transition: transform .2s ease-in-out, box-shadow .2s ease;
     background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
   }
 
   /* .hotspot::after {
@@ -138,6 +143,9 @@ body {
   /* Optional visual debug (remove when done) */
   .hotspot:hover {
     outline: 2px solid rgba(0, 102, 255, 0.6);
+    box-shadow: 0 0 10px rgba(3, 8, 15, 0.692);
+    transform: scale(1.5);
+    background-color: #f4f4f4;
   }
 
   /* Responsive stacking on smaller screens */

@@ -1,27 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<Title>Contact Us.</title>
-<style>
-p {color:black;font-family:arial;font-size:20px;}
-body {background-color:beige;}
-h1 {color:darkgreen;background-color:lightgreen;font-size:30px;font-family:arial;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartHub – Reclaim Your Home</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <link rel="stylesheet" href="../styles/about.css" />
+  <title>Contact</title>
+  <style>
+    p {
+      color: black;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+    }
+
+    body {
+      background-color: beige;
+    }
+
+    h1 {
+      color: darkgreen;
+      background-color: lightgreen;
+      font-size: 30px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 <body>
-<h1>Contact Us! We'd Love To Hear From You.</h1>
-<p>(989)227-8684</p>
-<p>smarthubcontact@gmail.com</p>
-<p>7890 Cherry Blvd, Mt. Pleasant, Michigan.</p>
-<hr>
-<p>Leave your first and last name and a message and our team will get back to you.</p>
-<form action="/action_page.php">
-<label for="fname">First Name:</label><br>
-<input type="text" id="fname" name="fname"><br>
-<label for="lname">Last Name:</label><br>
-<input type="text" id="lname" name="lname"><br><br>
-<textarea name="message" rows="5" cols="50">
-</textarea><br><br>
-<input type="submit" value="Submit">
-</form><br>
+  <div class="page-wrapper">
+    <!-- Header will be injected here. Remove script when running on a real server -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">
+          <img src="../assets/logo.png" alt="SmartHub Logo" class="logo-image" />
+          <span>SmartHub</span>
+        </a>
 
+        <nav class="nav-links">
+          <a href="About.html">About</a>
+          <a href="Features.html">Features</a>
+          <a href="Dev-Echo.html">Developers</a>
+          <a href="Contact.html">Contact</a>
+        </nav>
+
+        <div class="search-container">
+          <input type="text" placeholder="Search..." class="search-input" />
+        </div>
+      </div>
+    </header>
+
+    <h1>Contact Us! We'd Love To Hear From You.</h1>
+    <p>(989) 227-8684</p>
+    <p>smarthubcontact@gmail.com</p>
+    <p>7890 Cherry Blvd, Mt. Pleasant, Michigan.</p>
+    <hr />
+    <p>Leave your first and last name and a message and our team will get back to you.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+
+      <label for="lname">Last Name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+
+      <textarea name="message" rows="5" cols="50"></textarea><br /><br />
+      <input type="submit" value="Submit" />
+    </form><br />
+
+    <!-- Footer will be injected here -->
+    <script>
+      document.body.insertAdjacentHTML("beforeend", `
+        <footer class="site-footer">
+          <p>&copy; 2025 SmartHub. All rights reserved.</p>
+        </footer>
+      `);
+    </script>
+  </div>
+
+  <!-- All scripts go here -->
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

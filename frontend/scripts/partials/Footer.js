@@ -1,0 +1,1 @@
+// TODO: copy and paste the footer from the index file and make this an injectable component.

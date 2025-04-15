@@ -13,19 +13,26 @@
 <body>
 <div class="page-wrapper">  
   <!-- Header will be injected here  remove "sript when running on a real server"-->
-  <script>
-    document.body.insertAdjacentHTML("afterbegin", `
-      <header class="site-header">
-        <nav>
-          <a href="../index.html">SmartHub</a>
-          <a href="About.html">About</a>
-          <a href="Features.html">Features</a>
-          <a href="Dev-Echo.html">Developers</a>
-          <a href="Contact.html">Contact Us</a>
+  <header class="site-header">
+        
+    <div class="nav-container">
+        <a href="../index.html"  class="logo">
+            <img src="../assets/logo.png" alt="SmartHub Logo" class="logo-image" /> 
+            <span>SmartHub</span>
+        </a>     
+    
+    
+        <nav class="nav-links">
+            <a href="About.html">About</a>
+            <a href="Features.html">Features</a>
+            <a href="Dev-Echo.html">Developers</a>
+            <a href="Contact.html">Contact</a> 
         </nav>
-      </header>
-    `);
-  </script>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+        </div>
+    </div>
+  </header>
    
   
   <main class="about-us-container">
