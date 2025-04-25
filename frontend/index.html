@@ -24,9 +24,37 @@
         
             <nav class="nav-links">
                 <a href="pages/About.html">About</a>
-                <a href="pages/Features.html">Features</a>
-                <a href="pages/Dev-Echo.html">Developers</a>
+                <div class="nav-item mega-menu-parent" id="features-menu">
+                  <a href="#">Modules & Features</a>
+                  <div class="mega-menu">
+                    <div class="column">
+                      <h4>Smart Home</h4>
+                      <a href="#">Automation</a>
+                      <a href="#">Scenes</a>
+                      <a href="#">Energy</a>
+                    </div>
+                    <div class="column">
+                      <h4>Security</h4>
+                      <a href="#">Camera AI</a>
+                      <a href="#">Access Control</a>
+                      <a href="#">Emergency Response</a>
+                    </div>
+                    <div class="column">
+                      <h4>SmartPet</h4>
+                      <a href="#">Pet Door</a>
+                      <a href="#">Feeder</a>
+                      <a href="#">Tracking</a>
+                    </div>
+                    <div class="column">
+                      <h4>Local & Dev Tools</h4>
+                      <a href="pages/Dev-Echo.html">Developer Ecosystem</a>
+                      <a href="pages/Roadmap.html">Roadmap</a>
+                      <a href="#">Offline AI Modules</a>
+                    </div>
+                  </div>
+                </div>
                 <a href="pages/Contact.html">Contact</a> 
+                
             </nav>
             <div class="search-container">
                 <input type="text" placeholder="Search..." class="search-input" />
@@ -56,7 +84,10 @@
           <a href="#pet" class="hotspot hotspot-pet" data-icon="3" title="SmartPet"></a>
           <a href="#play" class="hotspot hotspot-play" data-icon="4" title="Media"></a>
           <a href="#outlet" class="hotspot hotspot-outlet" data-icon="5" title="Power Control"></a>
-          
+          <video id="security-video" class="hotspot-video" muted loop preload="auto">
+            <source src="assets/video/SmartHub Security  Protecting What Matters Most_free.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           
         </div>
     </section>

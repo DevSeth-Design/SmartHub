@@ -147,7 +147,19 @@ body {
     transform: scale(1.5);
     background-color: #f4f4f4;
   }
-
+  .hotspot-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px; /* Or whatever size you want */
+    height: auto;
+    transform: translate(-50%, -50%);
+    display: none; /* Hidden by default */
+    border-radius: 10px; /* Optional: smooth corners */
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6); /* Cool glow */
+    z-index: 10; /* Ensure it's above the image */
+  }
+  
   /* Responsive stacking on smaller screens */
 @media (max-width: 768px) {
     .home-container {
