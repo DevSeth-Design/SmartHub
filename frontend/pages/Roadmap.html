@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../styles/global.css" />
   <link rel="stylesheet" href="../styles/header.css" />
   <link rel="stylesheet" href="../styles/footer.css" />
-  <link rel="stylesheet" href="../styles/about.css" />
+  <link rel="stylesheet" href="../styles/roadmap.css" />
   <title>SmartHub - About Us</title>
 </head>
 <body>
@@ -19,8 +19,9 @@
         <a href="../index.html"  class="logo">
             <img src="../assets/logo.png" alt="SmartHub Logo" class="logo-image" /> 
             <span>SmartHub</span>
-        </a>
-
+        </a>     
+    
+    
         <nav class="nav-links">
             <a href="About.html">About</a>
             <div class="nav-item mega-menu-parent" id="features-menu">
@@ -52,62 +53,76 @@
                 </div>
               </div>
             </div>
-            <a href="Contact.html">Contact</a>    
+            <a href="Contact.html">Contact</a> 
+            
         </nav>
-
         <div class="search-container">
             <input type="text" placeholder="Search..." class="search-input" />
         </div>
     </div>
   </header>
-   
-  
-  <main class="about-us-container">
-    
-    <section class="about-us">
-      <h1>About The Project</h1>
-      <p class="intro"> SmartHub was designed to provide a secure, affordable, and modular platform for users who value their privacy.</p>
-     <div class="about-section"> 
-        <h2> Why SmartHub</h2>
-        <article>
-            <h3> Privacy
-                <p >
-                In today's world, privacy is a luxury. SmartHub is designed to give users an affordable smart home option
-                without trading off their privacy. SmartHub will act as a secure hub for all of personal Data.
-                </p>
-            </h3> 
-        </article>
 
-        <article>
-            <h3> Control
-                <p>
-                SmartHub uses a user-centric design, allowing users to contorl their smart home devices from a single 
-                device. 
-                </p>
-            </h3>
-      </article>
-        <article>
-            <h3> Expandability
-                <p>
-                    Our modular system allows users to add features that matter to them and will encorporate a simple plug and play system for futer expansion.
-                </p>
-            </h3>
-        </article>
-     </div>
-    </section>
-  </main>
+  <body> 
+    <section class="roadmap">
+        <h2>SmartHub Project Roadmap</h2>
+        <div class="card-grid">
+          
+          <div class="card complete">
+            <h3>Phase 1: Foundation</h3>
+            <span class="status">✅ Completed</span>
+            <ul>
+              <li>Finalize core concept</li>
+              <li>Build initial team</li>
+              <li>Plan MVP for automation & pet care</li>
+            </ul>
+          </div>
+      
+          <div class="card progress">
+            <h3>Phase 2: MVP Development</h3>
+            <span class="status">🔄 In Progress</span>
+            <ul>
+              <li>Develop SmartHome Core</li>
+              <li>Integrate SmartPet system</li>
+              <li>Test local-only AI detection</li>
+            </ul>
+          </div>
+      
+          <div class="card upcoming">
+            <h3>Phase 3: Early Access</h3>
+            <span class="status">🕓 Upcoming</span>
+            <ul>
+              <li>Launch invite-only beta</li>
+              <li>Gather feedback</li>
+              <li>Build developer API</li>
+            </ul>
+          </div>
+      
+          <div class="card upcoming">
+            <h3>Phase 4: Marketplace & Ecosystem</h3>
+            <span class="status">🕓 Upcoming</span>
+            <ul>
+              <li>Release SDK & docs</li>
+              <li>Enable module publishing</li>
+              <li>Deploy encrypted marketplace</li>
+            </ul>
+          </div>
+      
+        </div>
+      </section>
+      
+  </body>
 
-  <!-- Footer will be injected here -->
-  <script> 
-    document.body.insertAdjacentHTML("beforeend", `
-    <footer class="site-footer">
-        <p>&copy; 2025 SmartHub. All rights reserved.</p>
-    </footer>
+    <!-- Footer will be injected here -->
+    <script> 
+        document.body.insertAdjacentHTML("beforeend", `
+     <footer class="site-footer">
+       <p>&copy; 2025 SmartHub. All rights reserved.</p>
+     </footer>
     `);
     </script>
-</div>
-<!-- All scripts go here -->
-
-<script src="../scripts/scripts.js" ></script>
-</body>
-</html>
+    </div>
+    <!-- All scripts go here -->
+    
+    <script src="scripts/scripts.js" ></script>
+    </body>
+    </html>

@@ -28,7 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
         hotspot.style.backgroundImage = 'none';
       });
     });
+
+    const securityHotspot = document.querySelector('.hotspot-lock');
+    const securityVideo = document.getElementById('security-video');
+    
+    securityHotspot.addEventListener('mouseenter', () => {
+      securityVideo.style.display = 'block';
+      securityVideo.play();
+    });
+    
+    securityHotspot.addEventListener('mouseleave', () => {
+      securityVideo.style.display = 'none';
+      securityVideo.pause();
+      securityVideo.currentTime = 0; // Reset to start
+    });
   });
+
+
+
 
  
 
