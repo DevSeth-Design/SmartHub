@@ -44,6 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.getElementById('cta-button').addEventListener('click', () => {
+    window.location.href = 'pages/About.html'; // or 'Features.html'
+});
+
+
 
 
 
