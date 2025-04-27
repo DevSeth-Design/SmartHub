@@ -151,9 +151,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 300px; /* Or whatever size you want */
+    width: 475px; /* Or whatever size you want */
     height: auto;
-    transform: translate(-50%, -50%);
+    transform: translate(-70%, -46%);
     display: none; /* Hidden by default */
     border-radius: 10px; /* Optional: smooth corners */
     box-shadow: 0 0 20px rgba(0, 191, 255, 0.6); /* Cool glow */

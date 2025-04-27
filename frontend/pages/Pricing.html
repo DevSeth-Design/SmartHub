@@ -9,10 +9,18 @@
   <link rel="stylesheet" href="../styles/footer.css" />
   <link rel="stylesheet" href="../styles/about.css" />
   <title>SmartHub - About Us</title>
+  <style>
+    body {background-color:white;}
+    p{text-align:center;font-family:arial;}
+    h1{text-align:center;}
+    .myDiv1 {padding:15px;float:left;width:300px;height:350px;border:10px outset blue;background-color:lightblue;text-align:center;}
+    .myDiv2 {padding:15px;float:left;width:300px; height:350px;border:10px outset blue; background-color:lightblue;text-align:center;}
+    .myDiv3 {padding:15px;float:right;width:300px; height:350px;border:10px outset blue; background-color:lightblue;text-align:center;}
+    .myDiv4 {padding:15px;float:right;width:300px; height:350px;border:10px outset blue;background-color:lightblue;text-align:center;}
+    </style>
 </head>
 <body>
 <div class="page-wrapper">  
-  <!-- Header will be injected here  remove "sript when running on a real server"-->
   <header class="site-header">
         
     <div class="nav-container">
@@ -23,7 +31,17 @@
     
     
         <nav class="nav-links">
-            <a href="About.html">About</a>
+            <div class="nav-item mega-menu-parent" id="about-menu">
+              <a href="#">About</a>
+              <div class="mega-menu">
+                <div class="column">
+                  <h4>About Us</h4>
+                  <a href="About.html">Company</a>
+                  <a href="#">Careers</a>
+                  <a href="Terms and Conditions.html">Terms</a>
+                </div>
+              </div>
+            </div>
             <div class="nav-item mega-menu-parent" id="features-menu">
               <a href="#">Modules & Features</a>
               <div class="mega-menu">
@@ -41,7 +59,7 @@
                 </div>
                 <div class="column">
                   <h4>SmartPet</h4>
-                  <a href="#">Pet Door</a>
+                  <a href="SmartPet.html">Overview</a>
                   <a href="#">Feeder</a>
                   <a href="#">Tracking</a>
                 </div>
@@ -53,6 +71,7 @@
                 </div>
               </div>
             </div>
+            <a href="Pricing.html">Pricing</a>
             <a href="Contact.html">Contact</a> 
             
         </nav>
@@ -61,7 +80,43 @@
         </div>
     </div>
   </header>
-
+  
+  
+  <h1>Pricing Plans</h1>
+  <p>Pricing Plans Provided by SmartHub</p>
+    <hr>
+<div class="myDiv1">
+    <h2>Available Plans.</h2>
+    <p>We have available pricing plans that are budget friendly. Each plan covers a number of SmartHub Services.</p>
+    </div>
+<div class="myDiv2">
+    <h2>Basic Plan</h2>
+    <h2>$100</h2>
+    <h4>This is the monthly pricing plan for SmartHub.</h4>
+    <p>SmartPet.</p>
+    <p>HomeSecure.</p>
+</div>
+<div class="myDiv3">
+    <h2>Standard Pricing Plan</h2>
+    <h2>$300</h2>
+    <h4>This is the 6 month pricing plan for SmartHub.</h4>
+    <p>SmartPet.</p>
+    <p>HomeSecure.</p>
+    <p>GuardianGuardian.</p>
+    <p>HomeHealth.</p>
+</div>
+<div class="myDiv4">
+    <h2>Premium Pricing Plan</h2>
+    <h2>$500</h2>
+    <h4>This is the yearly pricing plan for Smart Hub.</h4>
+    <p>SmartPet.</p>
+    <p>HomeSecure.</p>
+    <p>GardenGuardian.</p>
+    <p>HomeHealth.</p>
+    <p>Custome Builder.</p>
+    <p>Smart Access.</p>
+</div>
+</body>
     <!-- Footer will be injected here -->
     <script> 
         document.body.insertAdjacentHTML("beforeend", `
